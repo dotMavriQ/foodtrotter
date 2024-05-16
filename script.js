@@ -1,45 +1,106 @@
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('wheelCanvas');
     const ctx = canvas.getContext('2d');
-    const wheelRadius = canvas.width / 2; // Assuming the canvas is a square
-    let segments = ['Africa', 'America', 'Asia', 'Europe', 'Oceania'];
+    const wheelRadius = canvas.width / 2;
+    let segments = ['Africa', 'North America', 'South America', 'Asia', 'Europe', 'Oceania'];
     let currentSegments = segments;
-    const segmentColors = ['#FFD700', '#C0C0C0', '#CD7F32', '#FFDF00', '#D3D3D3']; // Example colors for differentiation
     let spinAngleStart = 10;
     let startAngle = 0;
     let spinTime = 0;
     let spinTimeTotal = 0;
 
     const continentCountries = {
-        'Europe': ['Sweden', 'Germany', 'France', 'Italy', 'Spain', 'Poland', 'Romania', 'Netherlands', 'Belgium', 'Greece', 'Portugal', 'Czech Republic', 'Hungary', 'Sweden', 'Austria', 'Switzerland', 'Bulgaria', 'Denmark', 'Finland', 'Norway', 'Ireland', 'Croatia', 'Lithuania', 'Slovakia', 'Slovenia', 'Latvia', 'Estonia', 'Montenegro', 'Luxembourg', 'Malta', 'Iceland', 'Andorra', 'Monaco', 'Liechtenstein', 'San Marino', 'Vatican City'],
-        // Define other continents with their countries here...
+        'Africa': [
+            'Algeria 🇩🇿', 'Angola 🇦🇴', 'Benin 🇧🇯', 'Botswana 🇧🇼', 'Burkina Faso 🇧🇫', 'Burundi 🇧🇮', 'Cabo Verde 🇨🇻', 'Cameroon 🇨🇲',
+            'Central African Republic 🇨🇫', 'Chad 🇹🇩', 'Comoros 🇰🇲', 'Congo, Democratic Republic of the 🇨🇩', 'Congo, Republic of the 🇨🇬',
+            'Djibouti 🇩🇯', 'Egypt 🇪🇬', 'Equatorial Guinea 🇬🇶', 'Eritrea 🇪🇷', 'Eswatini 🇸🇿', 'Ethiopia 🇪🇹', 'Gabon 🇬🇦', 'Gambia 🇬🇲',
+            'Ghana 🇬🇭', 'Guinea 🇬🇳', 'Guinea-Bissau 🇬🇼', 'Ivory Coast 🇨🇮', 'Kenya 🇰🇪', 'Lesotho 🇱🇸', 'Liberia 🇱🇷', 'Libya 🇱🇾',
+            'Madagascar 🇲🇬', 'Malawi 🇲🇼', 'Mali 🇲🇱', 'Mauritania 🇲🇷', 'Mauritius 🇲🇺', 'Morocco 🇲🇦', 'Mozambique 🇲🇿', 'Namibia 🇳🇦',
+            'Niger 🇳🇪', 'Nigeria 🇳🇬', 'Rwanda 🇷🇼', 'Sao Tome and Principe 🇸🇹', 'Senegal 🇸🇳', 'Seychelles 🇸🇨', 'Sierra Leone 🇸🇱',
+            'Somalia 🇸🇴', 'South Africa 🇿🇦', 'South Sudan 🇸🇸', 'Sudan 🇸🇩', 'Tanzania 🇹🇿', 'Togo 🇹🇬', 'Tunisia 🇹🇳', 'Uganda 🇺🇬',
+            'Zambia 🇿🇲', 'Zimbabwe 🇿🇼'
+        ],
+        'Asia': [
+            'Afghanistan 🇦🇫', 'Bahrain 🇧🇭', 'Bangladesh 🇧🇩', 'Bhutan 🇧🇹', 'Brunei 🇧🇳', 'Burma (Myanmar) 🇲🇲', 'Cambodia 🇰🇭', 'China 🇨🇳',
+            'East Timor 🇹🇱', 'India 🇮🇳', 'Indonesia 🇮🇩', 'Iran 🇮🇷', 'Iraq 🇮🇶', 'Israel 🇮🇱', 'Japan 🇯🇵', 'Jordan 🇯🇴', 'Kazakhstan 🇰🇿',
+            'North Korea 🇰🇵', 'South Korea 🇰🇷', 'Kuwait 🇰🇼', 'Kyrgyzstan 🇰🇬', 'Laos 🇱🇦', 'Lebanon 🇱🇧', 'Malaysia 🇲🇾', 'Maldives 🇲🇻',
+            'Mongolia 🇲🇳', 'Nepal 🇳🇵', 'Oman 🇴🇲', 'Pakistan 🇵🇰', 'Philippines 🇵🇭', 'Qatar 🇶🇦', 'Russia 🇷🇺', 'Saudi Arabia 🇸🇦', 'Singapore 🇸🇬',
+            'Sri Lanka 🇱🇰', 'Syria 🇸🇾', 'Taiwan 🇹🇼', 'Tajikistan 🇹🇯', 'Thailand 🇹🇭', 'Turkey 🇹🇷', 'Turkmenistan 🇹🇲', 'United Arab Emirates 🇦🇪',
+            'Uzbekistan 🇺🇿', 'Vietnam 🇻🇳', 'Yemen 🇾🇪'
+        ],
+        'Europe': [
+            'Albania 🇦🇱', 'Andorra 🇦🇩', 'Armenia 🇦🇲', 'Austria 🇦🇹', 'Azerbaijan 🇦🇿', 'Belarus 🇧🇾', 'Belgium 🇧🇪', 'Bosnia and Herzegovina 🇧🇦',
+            'Bulgaria 🇧🇬', 'Croatia 🇭🇷', 'Cyprus 🇨🇾', 'Czech Republic 🇨🇿', 'Denmark 🇩🇰', 'Estonia 🇪🇪', 'Finland 🇫🇮', 'France 🇫🇷',
+            'Georgia 🇬🇪', 'Germany 🇩🇪', 'Greece 🇬🇷', 'Hungary 🇭🇺', 'Iceland 🇮🇸', 'Ireland 🇮🇪', 'Italy 🇮🇹', 'Kazakhstan 🇰🇿', 'Kosovo 🇽🇰',
+            'Latvia 🇱🇻', 'Liechtenstein 🇱🇮', 'Lithuania 🇱🇹', 'Luxembourg 🇱🇺', 'Malta 🇲🇹', 'Moldova 🇲🇩', 'Monaco 🇲🇨', 'Montenegro 🇲🇪',
+            'Netherlands 🇳🇱', 'North Macedonia 🇲🇰', 'Norway 🇳🇴', 'Poland 🇵🇱', 'Portugal 🇵🇹', 'Romania 🇷🇴', 'Russia 🇷🇺', 'San Marino 🇸🇲',
+            'Serbia 🇷🇸', 'Slovakia 🇸🇰', 'Slovenia 🇸🇮', 'Spain 🇪🇸', 'Sweden 🇸🇪', 'Switzerland 🇨🇭', 'Turkey 🇹🇷', 'Ukraine 🇺🇦',
+            'United Kingdom 🇬🇧', 'Vatican City 🇻🇦'
+        ],
+        'North America': [
+            'Antigua and Barbuda 🇦🇬', 'Bahamas 🇧🇸', 'Barbados 🇧🇧', 'Belize 🇧🇿', 'Canada 🇨🇦', 'Costa Rica 🇨🇷', 'Cuba 🇨🇺', 'Dominica 🇩🇲',
+            'Dominican Republic 🇩🇴', 'El Salvador 🇸🇻', 'Grenada 🇬🇩', 'Guatemala 🇬🇹', 'Haiti 🇭🇹', 'Honduras 🇭🇳', 'Jamaica 🇯🇲', 'Mexico 🇲🇽',
+            'Nicaragua 🇳🇮', 'Panama 🇵🇦', 'Saint Kitts and Nevis 🇰🇳', 'Saint Lucia 🇱🇨', 'Saint Vincent and the Grenadines 🇻🇨',
+            'Trinidad and Tobago 🇹🇹', 'United States 🇺🇸'
+        ],
+        'Oceania': [
+            'Australia 🇦🇺', 'Fiji 🇫🇯', 'Kiribati 🇰🇮', 'Marshall Islands 🇲🇭', 'Micronesia 🇫🇲', 'Nauru 🇳🇷', 'New Zealand 🇳🇿', 'Palau 🇵🇼',
+            'Papua New Guinea 🇵🇬', 'Samoa 🇼🇸', 'Solomon Islands 🇸🇧', 'Tonga 🇹🇴', 'Tuvalu 🇹🇻', 'Vanuatu 🇻🇺'
+        ],
+        'South America': [
+            'Argentina 🇦🇷', 'Bolivia 🇧🇴', 'Brazil 🇧🇷', 'Chile 🇨🇱', 'Colombia 🇨🇴', 'Ecuador 🇪🇨', 'Guyana 🇬🇾', 'Paraguay 🇵🇾',
+            'Peru 🇵🇪', 'Suriname 🇸🇷', 'Uruguay 🇺🇾', 'Venezuela 🇻🇪'
+        ]
     };
+
+
+
+    function drawSegmentLabel(ctx, text, angle, wheelRadius) {
+        ctx.save();
+        ctx.translate(wheelRadius, wheelRadius);
+        ctx.rotate(angle);
+        ctx.textAlign = "right";
+        ctx.fillStyle = "#000";
+        ctx.font = 'bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif';
+        ctx.fillText(text, wheelRadius - 10, 10);
+        ctx.restore();
+    }
 
     function drawWheel() {
         const anglePerSegment = 2 * Math.PI / currentSegments.length;
-        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas for redraw
+        let lastEndAngle = startAngle;
 
-        currentSegments.forEach((segment, index) => {
-            ctx.fillStyle = segmentColors[index % segmentColors.length];
+        // Clear the canvas for redraw
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < currentSegments.length; i++) {
+            const segment = currentSegments[i];
+            const angle = lastEndAngle + anglePerSegment;
+
+            ctx.fillStyle = getSegmentColor(i, currentSegments.length);
             ctx.beginPath();
-            ctx.moveTo(canvas.width / 2, canvas.height / 2);
-            ctx.arc(canvas.width / 2, canvas.height / 2, wheelRadius, startAngle + anglePerSegment * index, startAngle + anglePerSegment * (index + 1));
-            ctx.lineTo(canvas.width / 2, canvas.height / 2);
+            ctx.moveTo(wheelRadius, wheelRadius);
+            ctx.arc(wheelRadius, wheelRadius, wheelRadius, lastEndAngle, angle, false);
+            ctx.lineTo(wheelRadius, wheelRadius);
             ctx.fill();
 
-            // Draw segment text
-            ctx.save();
-            ctx.fillStyle = 'black';
-            ctx.translate(canvas.width / 2 + Math.cos(startAngle + anglePerSegment * (index + 0.5)) * wheelRadius / 2, canvas.height / 2 + Math.sin(startAngle + anglePerSegment * (index + 0.5)) * wheelRadius / 2);
-            ctx.rotate(startAngle + anglePerSegment * (index + 0.5) + Math.PI / 2);
-            ctx.fillText(segment, -ctx.measureText(segment).width / 2, 0);
-            ctx.restore();
-        });
+            drawSegmentLabel(ctx, segment, lastEndAngle + anglePerSegment / 2, wheelRadius);
+
+            lastEndAngle = angle;
+        }
+    }
+
+    function getSegmentColor(index, totalCount) {
+        // Generate a random color with good contrast
+        let hue = index * (360 / totalCount);
+        hue = (hue + (index * 47)) % 360; // Shift the hue for each segment to ensure better contrast
+        return `hsl(${hue}, 70%, 70%)`;
     }
 
     function spinWheel() {
         spinTime = 0;
-        spinTimeTotal = Math.random() * 3 + 4 * 1000; // Random spin time between 4-7 seconds
+        spinAngleStart = Math.random() * 10 + 20; // Make the start speed more variable
+        spinTimeTotal = Math.random() * 3000 + 2000; // Vary the spin time more, between 2-5 seconds
         rotateWheel();
     }
 
@@ -49,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             stopRotateWheel();
             return;
         }
+        // Use an easing function for a more dynamic deceleration curve
         const spinAngle = spinAngleStart - easeOut(spinTime, 0, spinAngleStart, spinTimeTotal);
         startAngle += (spinAngle * Math.PI / 180);
         drawWheel();
@@ -56,14 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function stopRotateWheel() {
-        let degrees = startAngle * 180 / Math.PI + 90;
+        let degrees = startAngle * 180 / Math.PI;
         let arcd = 360 / currentSegments.length;
-        let index = Math.floor((360 - degrees % 360) / arcd);
+        let index = Math.floor((360 - (degrees % 360)) / arcd);
         ctx.save();
-        alert(`You landed on: ${currentSegments[index]}`); // Placeholder for action after spin
+        alert(`You landed on: ${currentSegments[index]}`);
         ctx.restore();
 
-        // Update wheel to show countries if a continent is selected
+        // Load the next wheel with countries if a continent is selected
         if (continentCountries[currentSegments[index]]) {
             updateWheel(continentCountries[currentSegments[index]]);
         }
