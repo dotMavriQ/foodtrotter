@@ -3,28 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodTrotter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Spin the wheel to discover cuisine from around the world">
+    <title>Foodtrotter - Global Cuisine Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://flagcdn.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Satisfy&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="app">
-        <div id="wheel-container">
-            <canvas id="wheelCanvas" width="1000" height="1000"></canvas>
-            <div id="marker"
-                style="position: absolute; top: 490px; left: 1000px; width: 20px; height: 20px; background-color: red;">
+    <div class="wrapper">
+        <div class="main-content">
+            <h1>Foodtrotter</h1>
+            <p>Spin first for a continent, then spin again for a country to discover global cuisines!</p>
+
+            <div id="wheelContainer">
+                <div id="pointer"></div>
+                <div id="wheelLoader" class="loader-container wheel-loader">
+                    <div class="loader"></div>
+                    <p>Loading wheel...</p>
+                </div>
+                <canvas id="wheelCanvas" width="500" height="500"></canvas>
             </div>
-        </div>
-        <div id="recipe-sidebar"
-            style="position: absolute; left: 1020px; top: 0; width: 300px; background-color: #f9f9f9; padding: 10px;">
-            <h2>Recipe Details</h2>
-            <div id="recipe-content">
-                <!-- Recipe details will be injected here -->
+
+            <button id="spinButton">Spin the Wheel!</button>
+
+            <div id="resultDisplay">
+                Foodtrotting!
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <div id="cuisineSidebar" class="sidebar">
+        <button id="closeSidebarButton" class="close-button">&times;</button>
+        <div id="sidebarLoader" class="loader-container">
+            <div class="loader"></div>
+            <p>Loading cuisine information...</p>
+        </div>
+        <iframe id="wikiFrame" src="about:blank" frameborder="0"></iframe>
+    </div>
+    <script src="wheel.js"></script>
 </body>
 
 </html>

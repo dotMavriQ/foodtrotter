@@ -1,0 +1,88 @@
+{
+    "countries": [
+        {
+            "id": "argentina",
+            "name": "Argentina",
+            "continentId": "south-america",
+            "flag": "🇦🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Argentine_cuisine"
+        },
+        {
+            "id": "bolivia",
+            "name": "Bolivia",
+            "continentId": "south-america",
+            "flag": "🇧🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Bolivian_cuisine"
+        },
+        {
+            "id": "brazil",
+            "name": "Brazil",
+            "continentId": "south-america",
+            "flag": "🇧🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Brazilian_cuisine"
+        },
+        {
+            "id": "chile",
+            "name": "Chile",
+            "continentId": "south-america",
+            "flag": "🇨🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Chilean_cuisine"
+        },
+        {
+            "id": "colombia",
+            "name": "Colombia",
+            "continentId": "south-america",
+            "flag": "🇨🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Colombian_cuisine"
+        },
+        {
+            "id": "ecuador",
+            "name": "Ecuador",
+            "continentId": "south-america",
+            "flag": "🇪🇨",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Ecuadorian_cuisine"
+        },
+        {
+            "id": "guyana",
+            "name": "Guyana",
+            "continentId": "south-america",
+            "flag": "🇬🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Guyanese_cuisine"
+        },
+        {
+            "id": "paraguay",
+            "name": "Paraguay",
+            "continentId": "south-america",
+            "flag": "🇵🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Paraguayan_cuisine"
+        },
+        {
+            "id": "peru",
+            "name": "Peru",
+            "continentId": "south-america",
+            "flag": "🇵🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Peruvian_cuisine"
+        },
+        {
+            "id": "suriname",
+            "name": "Suriname",
+            "continentId": "south-america",
+            "flag": "🇸🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Surinamese_cuisine"
+        },
+        {
+            "id": "uruguay",
+            "name": "Uruguay",
+            "continentId": "south-america",
+            "flag": "🇺🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Uruguayan_cuisine"
+        },
+        {
+            "id": "venezuela",
+            "name": "Venezuela",
+            "continentId": "south-america",
+            "flag": "🇻🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Venezuelan_cuisine"
+        }
+    ]
+}

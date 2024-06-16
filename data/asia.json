@@ -1,0 +1,340 @@
+{
+    "countries": [
+        {
+            "id": "afghanistan",
+            "name": "Afghanistan",
+            "continentId": "asia",
+            "flag": "🇦🇫",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Afghan_cuisine"
+        },
+        {
+            "id": "armenia",
+            "name": "Armenia",
+            "continentId": "asia",
+            "flag": "🇦🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Armenian_cuisine"
+        },
+        {
+            "id": "azerbaijan",
+            "name": "Azerbaijan",
+            "continentId": "asia",
+            "flag": "🇦🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Azerbaijani_cuisine"
+        },
+        {
+            "id": "bahrain",
+            "name": "Bahrain",
+            "continentId": "asia",
+            "flag": "🇧🇭",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Bahraini_cuisine"
+        },
+        {
+            "id": "bangladesh",
+            "name": "Bangladesh",
+            "continentId": "asia",
+            "flag": "🇧🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Bangladeshi_cuisine"
+        },
+        {
+            "id": "bhutan",
+            "name": "Bhutan",
+            "continentId": "asia",
+            "flag": "🇧🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Bhutanese_cuisine"
+        },
+        {
+            "id": "brunei",
+            "name": "Brunei",
+            "continentId": "asia",
+            "flag": "🇧🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Bruneian_cuisine"
+        },
+        {
+            "id": "cambodia",
+            "name": "Cambodia",
+            "continentId": "asia",
+            "flag": "🇰🇭",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cambodian_cuisine"
+        },
+        {
+            "id": "china",
+            "name": "China",
+            "continentId": "asia",
+            "flag": "🇨🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Chinese_cuisine"
+        },
+        {
+            "id": "georgia",
+            "name": "Georgia",
+            "continentId": "asia",
+            "flag": "🇬🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Georgian_cuisine"
+        },
+        {
+            "id": "india",
+            "name": "India",
+            "continentId": "asia",
+            "flag": "🇮🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Indian_cuisine"
+        },
+        {
+            "id": "indonesia",
+            "name": "Indonesia",
+            "continentId": "asia",
+            "flag": "🇮🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Indonesian_cuisine"
+        },
+        {
+            "id": "iran",
+            "name": "Iran",
+            "continentId": "asia",
+            "flag": "🇮🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Iranian_cuisine"
+        },
+        {
+            "id": "iraq",
+            "name": "Iraq",
+            "continentId": "asia",
+            "flag": "🇮🇶",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Iraqi_cuisine"
+        },
+        {
+            "id": "israel",
+            "name": "Israel",
+            "continentId": "asia",
+            "flag": "🇮🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Israeli_cuisine"
+        },
+        {
+            "id": "japan",
+            "name": "Japan",
+            "continentId": "asia",
+            "flag": "🇯🇵",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Japanese_cuisine"
+        },
+        {
+            "id": "jordan",
+            "name": "Jordan",
+            "continentId": "asia",
+            "flag": "🇯🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Jordanian_cuisine"
+        },
+        {
+            "id": "kazakhstan",
+            "name": "Kazakhstan",
+            "continentId": "asia",
+            "flag": "🇰🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Kazakh_cuisine"
+        },
+        {
+            "id": "north-korea",
+            "name": "North Korea",
+            "continentId": "asia",
+            "flag": "🇰🇵",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Korean_cuisine#North_Korean_cuisine"
+        },
+        {
+            "id": "south-korea",
+            "name": "South Korea",
+            "continentId": "asia",
+            "flag": "🇰🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Korean_cuisine#South_Korean_cuisine"
+        },
+        {
+            "id": "kuwait",
+            "name": "Kuwait",
+            "continentId": "asia",
+            "flag": "🇰🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Kuwaiti_cuisine"
+        },
+        {
+            "id": "kyrgyzstan",
+            "name": "Kyrgyzstan",
+            "continentId": "asia",
+            "flag": "🇰🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Kyrgyz_cuisine"
+        },
+        {
+            "id": "laos",
+            "name": "Laos",
+            "continentId": "asia",
+            "flag": "🇱🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Lao_cuisine"
+        },
+        {
+            "id": "lebanon",
+            "name": "Lebanon",
+            "continentId": "asia",
+            "flag": "🇱🇧",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Lebanese_cuisine"
+        },
+        {
+            "id": "malaysia",
+            "name": "Malaysia",
+            "continentId": "asia",
+            "flag": "🇲🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Malaysian_cuisine"
+        },
+        {
+            "id": "maldives",
+            "name": "Maldives",
+            "continentId": "asia",
+            "flag": "🇲🇻",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Maldivian_cuisine"
+        },
+        {
+            "id": "mongolia",
+            "name": "Mongolia",
+            "continentId": "asia",
+            "flag": "🇲🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Mongolian_cuisine"
+        },
+        {
+            "id": "myanmar",
+            "name": "Myanmar (Burma)",
+            "continentId": "asia",
+            "flag": "🇲🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Burmese_cuisine"
+        },
+        {
+            "id": "nepal",
+            "name": "Nepal",
+            "continentId": "asia",
+            "flag": "🇳🇵",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Nepalese_cuisine"
+        },
+        {
+            "id": "oman",
+            "name": "Oman",
+            "continentId": "asia",
+            "flag": "🇴🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Omani_cuisine"
+        },
+        {
+            "id": "pakistan",
+            "name": "Pakistan",
+            "continentId": "asia",
+            "flag": "🇵🇰",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Pakistani_cuisine"
+        },
+        {
+            "id": "palestine",
+            "name": "Palestine",
+            "continentId": "asia",
+            "flag": "🇵🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Palestinian_cuisine"
+        },
+        {
+            "id": "philippines",
+            "name": "Philippines",
+            "continentId": "asia",
+            "flag": "🇵🇭",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Filipino_cuisine"
+        },
+        {
+            "id": "qatar",
+            "name": "Qatar",
+            "continentId": "asia",
+            "flag": "🇶🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Qatari_cuisine"
+        },
+        {
+            "id": "saudi-arabia",
+            "name": "Saudi Arabia",
+            "continentId": "asia",
+            "flag": "🇸🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Saudi_Arabian_cuisine"
+        },
+        {
+            "id": "singapore",
+            "name": "Singapore",
+            "continentId": "asia",
+            "flag": "🇸🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Singaporean_cuisine"
+        },
+        {
+            "id": "sri-lanka",
+            "name": "Sri Lanka",
+            "continentId": "asia",
+            "flag": "🇱🇰",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Sri_Lankan_cuisine"
+        },
+        {
+            "id": "syria",
+            "name": "Syria",
+            "continentId": "asia",
+            "flag": "🇸🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Syrian_cuisine"
+        },
+        {
+            "id": "taiwan",
+            "name": "Taiwan",
+            "continentId": "asia",
+            "flag": "🇹🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Taiwanese_cuisine"
+        },
+        {
+            "id": "tajikistan",
+            "name": "Tajikistan",
+            "continentId": "asia",
+            "flag": "🇹🇯",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Tajik_cuisine"
+        },
+        {
+            "id": "thailand",
+            "name": "Thailand",
+            "continentId": "asia",
+            "flag": "🇹🇭",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Thai_cuisine"
+        },
+        {
+            "id": "timor-leste",
+            "name": "Timor-Leste",
+            "continentId": "asia",
+            "flag": "🇹🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/East_Timorese_cuisine"
+        },
+        {
+            "id": "turkey",
+            "name": "Turkey",
+            "continentId": "asia",
+            "flag": "🇹🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Turkish_cuisine"
+        },
+        {
+            "id": "turkmenistan",
+            "name": "Turkmenistan",
+            "continentId": "asia",
+            "flag": "🇹🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Turkmen_cuisine"
+        },
+        {
+            "id": "united-arab-emirates",
+            "name": "United Arab Emirates",
+            "continentId": "asia",
+            "flag": "🇦🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Emirati_cuisine"
+        },
+        {
+            "id": "uzbekistan",
+            "name": "Uzbekistan",
+            "continentId": "asia",
+            "flag": "🇺🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Uzbek_cuisine"
+        },
+        {
+            "id": "vietnam",
+            "name": "Vietnam",
+            "continentId": "asia",
+            "flag": "🇻🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Vietnamese_cuisine"
+        },
+        {
+            "id": "yemen",
+            "name": "Yemen",
+            "continentId": "asia",
+            "flag": "🇾🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Yemeni_cuisine"
+        }
+    ]
+}

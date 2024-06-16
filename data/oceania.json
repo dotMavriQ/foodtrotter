@@ -1,0 +1,102 @@
+{
+    "countries": [
+        {
+            "id": "australia",
+            "name": "Australia",
+            "continentId": "oceania",
+            "flag": "🇦🇺",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Australian_cuisine"
+        },
+        {
+            "id": "fiji",
+            "name": "Fiji",
+            "continentId": "oceania",
+            "flag": "🇫🇯",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Fijian_cuisine"
+        },
+        {
+            "id": "kiribati",
+            "name": "Kiribati",
+            "continentId": "oceania",
+            "flag": "🇰🇮",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Kiribati"
+        },
+        {
+            "id": "marshall-islands",
+            "name": "Marshall Islands",
+            "continentId": "oceania",
+            "flag": "🇲🇭",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Marshallese_cuisine"
+        },
+        {
+            "id": "micronesia",
+            "name": "Micronesia",
+            "continentId": "oceania",
+            "flag": "🇫🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_the_Federated_States_of_Micronesia"
+        },
+        {
+            "id": "nauru",
+            "name": "Nauru",
+            "continentId": "oceania",
+            "flag": "🇳🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Nauruan_cuisine"
+        },
+        {
+            "id": "new-zealand",
+            "name": "New Zealand",
+            "continentId": "oceania",
+            "flag": "🇳🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/New_Zealand_cuisine"
+        },
+        {
+            "id": "palau",
+            "name": "Palau",
+            "continentId": "oceania",
+            "flag": "🇵🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Palauan_cuisine"
+        },
+        {
+            "id": "papua-new-guinea",
+            "name": "Papua New Guinea",
+            "continentId": "oceania",
+            "flag": "🇵🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Papua_New_Guinean_cuisine"
+        },
+        {
+            "id": "samoa",
+            "name": "Samoa",
+            "continentId": "oceania",
+            "flag": "🇼🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Samoan_cuisine"
+        },
+        {
+            "id": "solomon-islands",
+            "name": "Solomon Islands",
+            "continentId": "oceania",
+            "flag": "🇸🇧",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_the_Solomon_Islands"
+        },
+        {
+            "id": "tonga",
+            "name": "Tonga",
+            "continentId": "oceania",
+            "flag": "🇹🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Tongan_cuisine"
+        },
+        {
+            "id": "tuvalu",
+            "name": "Tuvalu",
+            "continentId": "oceania",
+            "flag": "🇹🇻",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Tuvaluan_cuisine"
+        },
+        {
+            "id": "vanuatu",
+            "name": "Vanuatu",
+            "continentId": "oceania",
+            "flag": "🇻🇺",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Vanuatuan_cuisine"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "continents": [
+        {
+            "id": "asia",
+            "name": "Asia 🌏"
+        },
+        {
+            "id": "europe",
+            "name": "Europe 🌍"
+        },
+        {
+            "id": "africa",
+            "name": "Africa 🌍"
+        },
+        {
+            "id": "north-america",
+            "name": "North America 🌎"
+        },
+        {
+            "id": "south-america",
+            "name": "South America 🌎"
+        },
+        {
+            "id": "oceania",
+            "name": "Oceania 🌏"
+        }
+    ]
+}

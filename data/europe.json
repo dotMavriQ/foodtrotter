@@ -1,0 +1,326 @@
+{
+    "countries": [
+        {
+            "id": "albania",
+            "name": "Albania",
+            "continentId": "europe",
+            "flag": "🇦🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Albanian_cuisine"
+        },
+        {
+            "id": "andorra",
+            "name": "Andorra",
+            "continentId": "europe",
+            "flag": "🇦🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Andorran_cuisine"
+        },
+        {
+            "id": "austria",
+            "name": "Austria",
+            "continentId": "europe",
+            "flag": "🇦🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Austrian_cuisine"
+        },
+        {
+            "id": "belarus",
+            "name": "Belarus",
+            "continentId": "europe",
+            "flag": "🇧🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Belarusian_cuisine"
+        },
+        {
+            "id": "belgium",
+            "name": "Belgium",
+            "continentId": "europe",
+            "flag": "🇧🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Belgian_cuisine"
+        },
+        {
+            "id": "bosnia-and-herzegovina",
+            "name": "Bosnia and Herzegovina",
+            "continentId": "europe",
+            "flag": "🇧🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Bosnian_cuisine"
+        },
+        {
+            "id": "bulgaria",
+            "name": "Bulgaria",
+            "continentId": "europe",
+            "flag": "🇧🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Bulgarian_cuisine"
+        },
+        {
+            "id": "croatia",
+            "name": "Croatia",
+            "continentId": "europe",
+            "flag": "🇭🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Croatian_cuisine"
+        },
+        {
+            "id": "cyprus",
+            "name": "Cyprus",
+            "continentId": "europe",
+            "flag": "🇨🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cypriot_cuisine"
+        },
+        {
+            "id": "czech-republic",
+            "name": "Czech Republic",
+            "continentId": "europe",
+            "flag": "🇨🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Czech_cuisine"
+        },
+        {
+            "id": "denmark",
+            "name": "Denmark",
+            "continentId": "europe",
+            "flag": "🇩🇰",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Danish_cuisine"
+        },
+        {
+            "id": "estonia",
+            "name": "Estonia",
+            "continentId": "europe",
+            "flag": "🇪🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Estonian_cuisine"
+        },
+        {
+            "id": "finland",
+            "name": "Finland",
+            "continentId": "europe",
+            "flag": "🇫🇮",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Finnish_cuisine"
+        },
+        {
+            "id": "france",
+            "name": "France",
+            "continentId": "europe",
+            "flag": "🇫🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/French_cuisine"
+        },
+        {
+            "id": "germany",
+            "name": "Germany",
+            "continentId": "europe",
+            "flag": "🇩🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/German_cuisine"
+        },
+        {
+            "id": "greece",
+            "name": "Greece",
+            "continentId": "europe",
+            "flag": "🇬🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Greek_cuisine"
+        },
+        {
+            "id": "hungary",
+            "name": "Hungary",
+            "continentId": "europe",
+            "flag": "🇭🇺",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Hungarian_cuisine"
+        },
+        {
+            "id": "iceland",
+            "name": "Iceland",
+            "continentId": "europe",
+            "flag": "🇮🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Icelandic_cuisine"
+        },
+        {
+            "id": "ireland",
+            "name": "Ireland",
+            "continentId": "europe",
+            "flag": "🇮🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Irish_cuisine"
+        },
+        {
+            "id": "italy",
+            "name": "Italy",
+            "continentId": "europe",
+            "flag": "🇮🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Italian_cuisine"
+        },
+        {
+            "id": "kosovo",
+            "name": "Kosovo",
+            "continentId": "europe",
+            "flag": "🇽🇰",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Kosovan_cuisine"
+        },
+        {
+            "id": "latvia",
+            "name": "Latvia",
+            "continentId": "europe",
+            "flag": "🇱🇻",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Latvian_cuisine"
+        },
+        {
+            "id": "liechtenstein",
+            "name": "Liechtenstein",
+            "continentId": "europe",
+            "flag": "🇱🇮",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Liechtenstein"
+        },
+        {
+            "id": "lithuania",
+            "name": "Lithuania",
+            "continentId": "europe",
+            "flag": "🇱🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Lithuanian_cuisine"
+        },
+        {
+            "id": "luxembourg",
+            "name": "Luxembourg",
+            "continentId": "europe",
+            "flag": "🇱🇺",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Luxembourg"
+        },
+        {
+            "id": "malta",
+            "name": "Malta",
+            "continentId": "europe",
+            "flag": "🇲🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Maltese_cuisine"
+        },
+        {
+            "id": "moldova",
+            "name": "Moldova",
+            "continentId": "europe",
+            "flag": "🇲🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Moldovan_cuisine"
+        },
+        {
+            "id": "monaco",
+            "name": "Monaco",
+            "continentId": "europe",
+            "flag": "🇲🇨",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Monégasque_cuisine"
+        },
+        {
+            "id": "montenegro",
+            "name": "Montenegro",
+            "continentId": "europe",
+            "flag": "🇲🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Montenegrin_cuisine"
+        },
+        {
+            "id": "netherlands",
+            "name": "Netherlands",
+            "continentId": "europe",
+            "flag": "🇳🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Dutch_cuisine"
+        },
+        {
+            "id": "north-macedonia",
+            "name": "North Macedonia",
+            "continentId": "europe",
+            "flag": "🇲🇰",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Macedonian_cuisine"
+        },
+        {
+            "id": "norway",
+            "name": "Norway",
+            "continentId": "europe",
+            "flag": "🇳🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Norwegian_cuisine"
+        },
+        {
+            "id": "poland",
+            "name": "Poland",
+            "continentId": "europe",
+            "flag": "🇵🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Polish_cuisine"
+        },
+        {
+            "id": "portugal",
+            "name": "Portugal",
+            "continentId": "europe",
+            "flag": "🇵🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Portuguese_cuisine"
+        },
+        {
+            "id": "romania",
+            "name": "Romania",
+            "continentId": "europe",
+            "flag": "🇷🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Romanian_cuisine"
+        },
+        {
+            "id": "russia",
+            "name": "Russia",
+            "continentId": "europe",
+            "flag": "🇷🇺",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Russian_cuisine"
+        },
+        {
+            "id": "san-marino",
+            "name": "San Marino",
+            "continentId": "europe",
+            "flag": "🇸🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Sammarinese_cuisine"
+        },
+        {
+            "id": "serbia",
+            "name": "Serbia",
+            "continentId": "europe",
+            "flag": "🇷🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Serbian_cuisine"
+        },
+        {
+            "id": "slovakia",
+            "name": "Slovakia",
+            "continentId": "europe",
+            "flag": "🇸🇰",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Slovak_cuisine"
+        },
+        {
+            "id": "slovenia",
+            "name": "Slovenia",
+            "continentId": "europe",
+            "flag": "🇸🇮",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Slovenian_cuisine"
+        },
+        {
+            "id": "spain",
+            "name": "Spain",
+            "continentId": "europe",
+            "flag": "🇪🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Spanish_cuisine"
+        },
+        {
+            "id": "sweden",
+            "name": "Sweden",
+            "continentId": "europe",
+            "flag": "🇸🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Swedish_cuisine"
+        },
+        {
+            "id": "switzerland",
+            "name": "Switzerland",
+            "continentId": "europe",
+            "flag": "🇨🇭",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Swiss_cuisine"
+        },
+        {
+            "id": "ukraine",
+            "name": "Ukraine",
+            "continentId": "europe",
+            "flag": "🇺🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Ukrainian_cuisine"
+        },
+        {
+            "id": "united-kingdom",
+            "name": "United Kingdom",
+            "continentId": "europe",
+            "flag": "🇬🇧",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/British_cuisine"
+        },
+        {
+            "id": "vatican-city",
+            "name": "Vatican City",
+            "continentId": "europe",
+            "flag": "🇻🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Vatican_cuisine"
+        }
+    ]
+}

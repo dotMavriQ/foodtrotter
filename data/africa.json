@@ -1,0 +1,382 @@
+{
+    "countries": [
+        {
+            "id": "algeria",
+            "name": "Algeria",
+            "continentId": "africa",
+            "flag": "🇩🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Algerian_cuisine"
+        },
+        {
+            "id": "angola",
+            "name": "Angola",
+            "continentId": "africa",
+            "flag": "🇦🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Angolan_cuisine"
+        },
+        {
+            "id": "benin",
+            "name": "Benin",
+            "continentId": "africa",
+            "flag": "🇧🇯",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Beninese_cuisine"
+        },
+        {
+            "id": "botswana",
+            "name": "Botswana",
+            "continentId": "africa",
+            "flag": "🇧🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Botswana_cuisine"
+        },
+        {
+            "id": "burkina-faso",
+            "name": "Burkina Faso",
+            "continentId": "africa",
+            "flag": "🇧🇫",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Burkinabé_cuisine"
+        },
+        {
+            "id": "burundi",
+            "name": "Burundi",
+            "continentId": "africa",
+            "flag": "🇧🇮",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Burundian_cuisine"
+        },
+        {
+            "id": "cabo-verde",
+            "name": "Cabo Verde",
+            "continentId": "africa",
+            "flag": "🇨🇻",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cape_Verdean_cuisine"
+        },
+        {
+            "id": "cameroon",
+            "name": "Cameroon",
+            "continentId": "africa",
+            "flag": "🇨🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cameroonian_cuisine"
+        },
+        {
+            "id": "central-african-republic",
+            "name": "Central African Republic",
+            "continentId": "africa",
+            "flag": "🇨🇫",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Central_African_Republic_cuisine"
+        },
+        {
+            "id": "chad",
+            "name": "Chad",
+            "continentId": "africa",
+            "flag": "🇹🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Chadian_cuisine"
+        },
+        {
+            "id": "comoros",
+            "name": "Comoros",
+            "continentId": "africa",
+            "flag": "🇰🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Comorian_cuisine"
+        },
+        {
+            "id": "democratic-republic-of-the-congo",
+            "name": "Democratic Republic of the Congo",
+            "continentId": "africa",
+            "flag": "🇨🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Congolese_cuisine"
+        },
+        {
+            "id": "republic-of-the-congo",
+            "name": "Republic of the Congo",
+            "continentId": "africa",
+            "flag": "🇨🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Congolese_cuisine"
+        },
+        {
+            "id": "cote-d-ivoire",
+            "name": "Cote d'Ivoire",
+            "continentId": "africa",
+            "flag": "🇨🇮",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Ivorian_cuisine"
+        },
+        {
+            "id": "djibouti",
+            "name": "Djibouti",
+            "continentId": "africa",
+            "flag": "🇩🇯",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Djiboutian_cuisine"
+        },
+        {
+            "id": "egypt",
+            "name": "Egypt",
+            "continentId": "africa",
+            "flag": "🇪🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Egyptian_cuisine"
+        },
+        {
+            "id": "equatorial-guinea",
+            "name": "Equatorial Guinea",
+            "continentId": "africa",
+            "flag": "🇬🇶",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Equatorial_Guinean_cuisine"
+        },
+        {
+            "id": "eritrea",
+            "name": "Eritrea",
+            "continentId": "africa",
+            "flag": "🇪🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Eritrean_cuisine"
+        },
+        {
+            "id": "eswatini",
+            "name": "Eswatini",
+            "continentId": "africa",
+            "flag": "🇸🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Eswatini"
+        },
+        {
+            "id": "ethiopia",
+            "name": "Ethiopia",
+            "continentId": "africa",
+            "flag": "🇪🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Ethiopian_cuisine"
+        },
+        {
+            "id": "gabon",
+            "name": "Gabon",
+            "continentId": "africa",
+            "flag": "🇬🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Gabonese_cuisine"
+        },
+        {
+            "id": "gambia",
+            "name": "Gambia",
+            "continentId": "africa",
+            "flag": "🇬🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Gambian_cuisine"
+        },
+        {
+            "id": "ghana",
+            "name": "Ghana",
+            "continentId": "africa",
+            "flag": "🇬🇭",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Ghanaian_cuisine"
+        },
+        {
+            "id": "guinea",
+            "name": "Guinea",
+            "continentId": "africa",
+            "flag": "🇬🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Guinean_cuisine"
+        },
+        {
+            "id": "guinea-bissau",
+            "name": "Guinea-Bissau",
+            "continentId": "africa",
+            "flag": "🇬🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Guinea-Bissauan_cuisine"
+        },
+        {
+            "id": "kenya",
+            "name": "Kenya",
+            "continentId": "africa",
+            "flag": "🇰🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Kenyan_cuisine"
+        },
+        {
+            "id": "lesotho",
+            "name": "Lesotho",
+            "continentId": "africa",
+            "flag": "🇱🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Lesotho"
+        },
+        {
+            "id": "liberia",
+            "name": "Liberia",
+            "continentId": "africa",
+            "flag": "🇱🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Liberian_cuisine"
+        },
+        {
+            "id": "libya",
+            "name": "Libya",
+            "continentId": "africa",
+            "flag": "🇱🇾",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Libyan_cuisine"
+        },
+        {
+            "id": "madagascar",
+            "name": "Madagascar",
+            "continentId": "africa",
+            "flag": "🇲🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Malagasy_cuisine"
+        },
+        {
+            "id": "malawi",
+            "name": "Malawi",
+            "continentId": "africa",
+            "flag": "🇲🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Malawian_cuisine"
+        },
+        {
+            "id": "mali",
+            "name": "Mali",
+            "continentId": "africa",
+            "flag": "🇲🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Malian_cuisine"
+        },
+        {
+            "id": "mauritania",
+            "name": "Mauritania",
+            "continentId": "africa",
+            "flag": "🇲🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Mauritanian_cuisine"
+        },
+        {
+            "id": "mauritius",
+            "name": "Mauritius",
+            "continentId": "africa",
+            "flag": "🇲🇺",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Mauritian_cuisine"
+        },
+        {
+            "id": "morocco",
+            "name": "Morocco",
+            "continentId": "africa",
+            "flag": "🇲🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Moroccan_cuisine"
+        },
+        {
+            "id": "mozambique",
+            "name": "Mozambique",
+            "continentId": "africa",
+            "flag": "🇲🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Mozambican_cuisine"
+        },
+        {
+            "id": "namibia",
+            "name": "Namibia",
+            "continentId": "africa",
+            "flag": "🇳🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Namibian_cuisine"
+        },
+        {
+            "id": "niger",
+            "name": "Niger",
+            "continentId": "africa",
+            "flag": "🇳🇪",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Nigerien_cuisine"
+        },
+        {
+            "id": "nigeria",
+            "name": "Nigeria",
+            "continentId": "africa",
+            "flag": "🇳🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Nigerian_cuisine"
+        },
+        {
+            "id": "rwanda",
+            "name": "Rwanda",
+            "continentId": "africa",
+            "flag": "🇷🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Rwandan_cuisine"
+        },
+        {
+            "id": "sao-tome-and-principe",
+            "name": "Sao Tome and Principe",
+            "continentId": "africa",
+            "flag": "🇸🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_São_Tomé_and_Príncipe"
+        },
+        {
+            "id": "senegal",
+            "name": "Senegal",
+            "continentId": "africa",
+            "flag": "🇸🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Senegalese_cuisine"
+        },
+        {
+            "id": "seychelles",
+            "name": "Seychelles",
+            "continentId": "africa",
+            "flag": "🇸🇨",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Seychellois_cuisine"
+        },
+        {
+            "id": "sierra-leone",
+            "name": "Sierra Leone",
+            "continentId": "africa",
+            "flag": "🇸🇱",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Sierra_Leonean_cuisine"
+        },
+        {
+            "id": "somalia",
+            "name": "Somalia",
+            "continentId": "africa",
+            "flag": "🇸🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Somali_cuisine"
+        },
+        {
+            "id": "south-africa",
+            "name": "South Africa",
+            "continentId": "africa",
+            "flag": "🇿🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/South_African_cuisine"
+        },
+        {
+            "id": "south-sudan",
+            "name": "South Sudan",
+            "continentId": "africa",
+            "flag": "🇸🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/South_Sudanese_cuisine"
+        },
+        {
+            "id": "sudan",
+            "name": "Sudan",
+            "continentId": "africa",
+            "flag": "🇸🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Sudanese_cuisine"
+        },
+        {
+            "id": "tanzania",
+            "name": "Tanzania",
+            "continentId": "africa",
+            "flag": "🇹🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Tanzanian_cuisine"
+        },
+        {
+            "id": "togo",
+            "name": "Togo",
+            "continentId": "africa",
+            "flag": "🇹🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Togolese_cuisine"
+        },
+        {
+            "id": "tunisia",
+            "name": "Tunisia",
+            "continentId": "africa",
+            "flag": "🇹🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Tunisian_cuisine"
+        },
+        {
+            "id": "uganda",
+            "name": "Uganda",
+            "continentId": "africa",
+            "flag": "🇺🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Ugandan_cuisine"
+        },
+        {
+            "id": "zambia",
+            "name": "Zambia",
+            "continentId": "africa",
+            "flag": "🇿🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Zambian_cuisine"
+        },
+        {
+            "id": "zimbabwe",
+            "name": "Zimbabwe",
+            "continentId": "africa",
+            "flag": "🇿🇼",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Zimbabwean_cuisine"
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "countries": [
+        {
+            "id": "antigua-and-barbuda",
+            "name": "Antigua and Barbuda",
+            "continentId": "north-america",
+            "flag": "🇦🇬",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Antigua_and_Barbuda"
+        },
+        {
+            "id": "bahamas",
+            "name": "Bahamas",
+            "continentId": "north-america",
+            "flag": "🇧🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_the_Bahamas"
+        },
+        {
+            "id": "barbados",
+            "name": "Barbados",
+            "continentId": "north-america",
+            "flag": "🇧🇧",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Barbadian_cuisine"
+        },
+        {
+            "id": "belize",
+            "name": "Belize",
+            "continentId": "north-america",
+            "flag": "🇧🇿",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Belizean_cuisine"
+        },
+        {
+            "id": "canada",
+            "name": "Canada",
+            "continentId": "north-america",
+            "flag": "🇨🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Canadian_cuisine"
+        },
+        {
+            "id": "costa-rica",
+            "name": "Costa Rica",
+            "continentId": "north-america",
+            "flag": "🇨🇷",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Costa_Rican_cuisine"
+        },
+        {
+            "id": "cuba",
+            "name": "Cuba",
+            "continentId": "north-america",
+            "flag": "🇨🇺",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuban_cuisine"
+        },
+        {
+            "id": "dominica",
+            "name": "Dominica",
+            "continentId": "north-america",
+            "flag": "🇩🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Dominica"
+        },
+        {
+            "id": "dominican-republic",
+            "name": "Dominican Republic",
+            "continentId": "north-america",
+            "flag": "🇩🇴",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Dominican_Republic_cuisine"
+        },
+        {
+            "id": "el-salvador",
+            "name": "El Salvador",
+            "continentId": "north-america",
+            "flag": "🇸🇻",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Salvadoran_cuisine"
+        },
+        {
+            "id": "grenada",
+            "name": "Grenada",
+            "continentId": "north-america",
+            "flag": "🇬🇩",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Grenadian_cuisine"
+        },
+        {
+            "id": "guatemala",
+            "name": "Guatemala",
+            "continentId": "north-america",
+            "flag": "🇬🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Guatemalan_cuisine"
+        },
+        {
+            "id": "haiti",
+            "name": "Haiti",
+            "continentId": "north-america",
+            "flag": "🇭🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Haitian_cuisine"
+        },
+        {
+            "id": "honduras",
+            "name": "Honduras",
+            "continentId": "north-america",
+            "flag": "🇭🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Honduran_cuisine"
+        },
+        {
+            "id": "jamaica",
+            "name": "Jamaica",
+            "continentId": "north-america",
+            "flag": "🇯🇲",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Jamaican_cuisine"
+        },
+        {
+            "id": "mexico",
+            "name": "Mexico",
+            "continentId": "north-america",
+            "flag": "🇲🇽",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Mexican_cuisine"
+        },
+        {
+            "id": "nicaragua",
+            "name": "Nicaragua",
+            "continentId": "north-america",
+            "flag": "🇳🇮",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Nicaraguan_cuisine"
+        },
+        {
+            "id": "panama",
+            "name": "Panama",
+            "continentId": "north-america",
+            "flag": "🇵🇦",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Panamanian_cuisine"
+        },
+        {
+            "id": "saint-kitts-and-nevis",
+            "name": "Saint Kitts and Nevis",
+            "continentId": "north-america",
+            "flag": "🇰🇳",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Saint_Kitts_and_Nevis"
+        },
+        {
+            "id": "saint-lucia",
+            "name": "Saint Lucia",
+            "continentId": "north-america",
+            "flag": "🇱🇨",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Saint_Lucian_cuisine"
+        },
+        {
+            "id": "saint-vincent-and-the-grenadines",
+            "name": "Saint Vincent and the Grenadines",
+            "continentId": "north-america",
+            "flag": "🇻🇨",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_Saint_Vincent_and_the_Grenadines"
+        },
+        {
+            "id": "trinidad-and-tobago",
+            "name": "Trinidad and Tobago",
+            "continentId": "north-america",
+            "flag": "🇹🇹",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_cuisine"
+        },
+        {
+            "id": "united-states",
+            "name": "United States",
+            "continentId": "north-america",
+            "flag": "🇺🇸",
+            "cuisineWikiUrl": "https://en.wikipedia.org/wiki/Cuisine_of_the_United_States"
+        }
+    ]
+}

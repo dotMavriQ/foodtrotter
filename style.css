@@ -1,0 +1,515 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent body scroll when sidebar is open */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+    /* Keep behind main content but above body background */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    transform: scale(0.75);
+    /* Adjusted scale for better visibility */
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+    /* Added transition for potential future adjustments */
+}
+
+/* Wrapper for centering all content */
+.main-content {
+    width: 580px;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: clamp(15px, 4vw, 30px);
+    /* Increased padding */
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 217, 0, 0.7), 0 0 15px rgba(255, 0, 0, 0.5);
+    position: relative;
+    /* Needed for z-index stacking context */
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 10px auto;
+    /* Add margin to prevent cropping */
+    z-index: 1;
+    /* Ensure main content is above pseudo-elements */
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="10" y="50" font-family="Arial" font-size="30" opacity="0.07">🍕</text><text x="50" y="30" font-family="Arial" font-size="30" opacity="0.07">🌮</text><text x="70" y="70" font-family="Arial" font-size="30" opacity="0.07">🍜</text><text x="30" y="80" font-family="Arial" font-size="30" opacity="0.07">🍣</text></svg>');
+    opacity: 0.4;
+    z-index: -1;
+    /* Behind main-content content */
+}
+
+/* Responsive styles - Adjusted for better visibility */
+/* (Media queries remain the same as your version) */
+@media (max-width: 900px) {
+    .wrapper {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        transform: scale(0.55);
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    #resultDisplay {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        transform: scale(0.45);
+    }
+
+    h1::after {
+        font-size: 1.2rem;
+        top: -5px;
+        right: -15px;
+    }
+    
+    /* Make main card fill screen on mobile */
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* Make sidebar cover full screen on mobile */
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        transform: scale(0.4);
+    }
+}
+
+@media (max-width: 350px) {
+    .wrapper {
+        transform: scale(0.35);
+    }
+}
+
+
+h1 {
+    margin-bottom: 5px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: clamp(2.2rem, 7vw, 3.2rem);
+    color: #d10000;
+    text-shadow: 3px 3px 0 #ffcc00, 5px 5px 6px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    transform: rotate(-2deg);
+    padding: 0 15px;
+    width: max-content;
+    max-width: 100%;
+    line-height: 0.9;
+}
+
+h1::after {
+    content: "🌎";
+    position: absolute;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    top: -10px;
+    right: -20px;
+    transform: rotate(15deg);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+    font-family: 'Satisfy', cursive;
+    line-height: 1.3;
+    width: 90%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for the wheel */
+#wheelContainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    margin: -5px auto 10px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 170, 0, 0.3) inset;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent);
+    overflow: hidden;
+}
+
+/* The canvas where the wheel is drawn */
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Pointer - Flipped and Lowered */
+#pointer {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #ff0000;
+    z-index: 10;
+    filter: drop-shadow(2px -2px 3px rgba(0, 0, 0, 0.4));
+    animation: pointerGlow 1.5s infinite alternate;
+}
+
+@keyframes pointerGlow {
+
+    /* (Unchanged) */
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.7));
+        border-top: 30px solid #ff0000;
+    }
+
+    100% {
+        filter: drop-shadow(0 0 12px rgba(255, 0, 0, 0.9));
+        border-top: 30px solid #ff3a3a;
+    }
+}
+
+/* Spin button styling */
+#spinButton {
+    display: block;
+    margin: 0 auto 15px auto;
+    padding: clamp(8px, 3vw, 12px) clamp(25px, 5vw, 35px);
+    font-size: clamp(16px, 4vw, 20px);
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    cursor: pointer;
+    background: linear-gradient(145deg, #ff5a00, #ff0062);
+    color: white;
+    border: 3px solid #ffcc00;
+    border-radius: 30px;
+    box-shadow: 0 6px 0 #a30000, 0 8px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    transform: rotate(-1deg);
+    width: fit-content;
+}
+
+#spinButton:hover {
+    transform: translateY(-3px) rotate(-1deg);
+    box-shadow: 0 8px 0 #a30000, 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #ff6b1a, #ff2878);
+}
+
+#spinButton:active {
+    transform: translateY(3px) rotate(-1deg);
+    box-shadow: 0 2px 0 #a30000, 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+#spinButton::after {
+    /* (Unchanged) */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateX(-100%);
+}
+
+#spinButton:hover::after {
+    animation: shimmer 1s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+/* Styling for the result display area */
+#resultDisplay {
+    margin-top: 15px;
+    font-size: clamp(18px, 5vw, 24px);
+    font-weight: bold;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px clamp(10px, 5vw, 20px);
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+    position: relative;
+    border: 2px dashed #ff8800;
+    overflow: hidden;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    transform: rotate(1deg);
+    width: 90%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resultDisplay::before {
+    /* (Unchanged) */
+    content: "🍴";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+    opacity: 0.7;
+}
+
+#resultDisplay::after {
+    /* (Unchanged) */
+    content: "🍴";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+    font-size: 1.3em;
+    opacity: 0.7;
+}
+
+@media (max-width: 550px) {
+
+    #resultDisplay::before,
+    #resultDisplay::after {
+        display: none;
+    }
+}
+
+
+/* Style for the images Twemoji generates */
+#resultDisplay img.flag-icon {
+    display: inline-block;
+    vertical-align: middle;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+    margin-right: 8px;
+    border-radius: 2px;
+    width: auto;
+    height: 1.8em;
+    object-fit: contain;
+}
+
+/* --- Sidebar Styles --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    /* Adjust width as needed */
+    max-width: 600px;
+    /* Max width */
+    min-width: 300px;
+    /* Min width */
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    /* Start hidden */
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+    /* Ensure sidebar is on top */
+    border-top-left-radius: 15px;
+    /* Rounded corner */
+    border-bottom-left-radius: 15px;
+    /* Rounded corner */
+    padding: 20px;
+    padding-top: 50px;
+    /* Space for close button */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.open {
+    transform: translateX(0%);
+    /* Slide in */
+}
+
+.sidebar .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #eee;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #555;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar .close-button:hover {
+    background-color: #ff5a00;
+    color: white;
+}
+
+#wikiFrame {
+    flex-grow: 1;
+    /* Take remaining height */
+    border: 1px solid #ccc;
+    /* Optional border for iframe */
+    width: 100%;
+    height: 100%;
+    /* Use flex-grow instead of fixed height */
+}
+
+/* --- End Sidebar Styles --- */
+
+/* --- Loading Indicators --- */
+.loader-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 50;
+    transition: opacity 0.5s ease-out, visibility 0.5s;
+}
+
+.wheel-loader {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#sidebarLoader {
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+}
+
+.loader-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* Prevents interaction with hidden loaders */
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #ff5a00;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loader-container p {
+    margin-top: 15px;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
