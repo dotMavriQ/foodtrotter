@@ -145,12 +145,39 @@ body::before {
         justify-content: center;
     }
     
-    /* Make sidebar cover full screen on mobile */
+    /* Ensure wheel container is circular on mobile */
+    #wheelContainer {
+        width: 350px;
+        height: 350px;
+        max-width: 90%;
+        aspect-ratio: 1 / 1 !important;
+        margin: 0 auto;
+    }
+    
+    /* Adjust sidebar for mobile */
     .sidebar {
         width: 100%;
-        max-width: 100%;
-        min-width: 100%;
+        max-width: none;
+        min-width: auto;
+        left: 0;
+        right: 0;
         border-radius: 0;
+        padding: 15px;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        transform: translateX(100%);
+        box-sizing: border-box;
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    #wikiFrame {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -208,15 +235,15 @@ p {
 /* Container for the wheel */
 #wheelContainer {
     position: relative;
-    width: 500px;
-    height: 500px;
-    max-width: 100%;
+    width: min(500px, 90vw);
+    height: min(500px, 90vw);
     margin: -5px auto 10px;
     display: block;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 170, 0, 0.3) inset;
     background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent);
     overflow: hidden;
+    aspect-ratio: 1 / 1 !important; /* Ensure it's perfectly circular */
 }
 
 /* The canvas where the wheel is drawn */
@@ -230,7 +257,7 @@ canvas {
 /* Pointer - Flipped and Lowered */
 #pointer {
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -403,7 +430,7 @@ canvas {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
     transform: translateX(100%);
     /* Start hidden */
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, visibility 0.5s, opacity 0.5s;
     z-index: 1000;
     /* Ensure sidebar is on top */
     border-top-left-radius: 15px;
@@ -416,11 +443,15 @@ canvas {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
 }
 
 .sidebar.open {
     transform: translateX(0%);
     /* Slide in */
+    visibility: visible;
+    opacity: 1;
 }
 
 .sidebar .close-button {
@@ -475,6 +506,7 @@ canvas {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    aspect-ratio: 1 / 1 !important; /* Ensure loader maintains circular shape */
 }
 
 #sidebarLoader {
@@ -499,6 +531,7 @@ canvas {
     border-top: 5px solid #ff5a00;
     border-radius: 50%;
     animation: spin 1s linear infinite;
+    aspect-ratio: 1 / 1 !important; /* Ensure spinner is perfectly circular */
 }
 
 .loader-container p {
