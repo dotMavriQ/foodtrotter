@@ -4,6 +4,7 @@ html {
     padding: 0;
     overflow: hidden;
     /* Prevent body scroll when sidebar is open */
+    position: relative;
 }
 
 body {
@@ -40,6 +41,7 @@ body::before {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
     transform: scale(0.75);
     /* Adjusted scale for better visibility */
@@ -123,7 +125,14 @@ body::before {
 
 @media (max-width: 450px) {
     .wrapper {
-        transform: scale(0.45);
+        transform: scale(1);
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
     }
 
     h1::after {
@@ -143,6 +152,7 @@ body::before {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        overflow-y: auto;
     }
     
     /* Ensure wheel container is circular on mobile */
@@ -154,11 +164,11 @@ body::before {
         margin: 0 auto;
     }
     
-    /* Adjust sidebar for mobile */
-    .sidebar {
-        width: 100%;
-        max-width: none;
-        min-width: auto;
+    /* Adjust sidebar for mobile - full width ONLY on mobile */
+    html body .sidebar {
+        width: 100% !important; /* Full width only on mobile - with higher specificity */
+        max-width: 100% !important;
+        min-width: 100% !important;
         left: 0;
         right: 0;
         border-radius: 0;
@@ -169,27 +179,39 @@ body::before {
         bottom: 0;
         transform: translateX(100%);
         box-sizing: border-box;
+        z-index: 9999; /* Ensure it's above everything */
     }
     
     .sidebar.open {
         transform: translateX(0);
+        overflow: hidden; /* Prevent scrolling behind sidebar */
     }
     
     #wikiFrame {
         width: 100%;
         box-sizing: border-box;
+        margin-top: 25px; /* Add space below the close button on mobile */
+    }
+    
+    /* Make close button more tappable on mobile */
+    html body .sidebar .close-button {
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+        top: 15px;
+        right: 15px;
     }
 }
 
 @media (max-width: 400px) {
     .wrapper {
-        transform: scale(0.4);
+        transform: scale(1);
     }
 }
 
 @media (max-width: 350px) {
     .wrapper {
-        transform: scale(0.35);
+        transform: scale(1);
     }
 }
 
